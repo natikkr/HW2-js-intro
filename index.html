@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------#4")
+        let a = 3;
+        let b = 8;
+        let sum = a + b;
+        let y = b - a;
+        let z = a * b;
+        let d = a / b;
+        console.log(sum);
+        console.log(y);
+        console.log(z);
+        console.log(d);
+        console.log("----------#5")
+        let res = ''
+        for (let i=1; i<=5; i++){
+            res = res + i + ' '
+        }
+        console.log(res)
+        console.log("----------#6")
+        res = ''
+        for (let i=5; i>=1; i--){
+            res = res + i + ' '
+        }
+        console.log(res)
+        console.log("----------#7")
+        function getMarkInfo(condition){
+            if (condition == 10){
+                console.log("У вас максимальній балл")
+            }
+            else{
+                console.log("У вас средний балл")
+            }
+        }
+        getMarkInfo(10)
+        getMarkInfo(1)
+        console.log("----------#8")
+        function getDayInfo(position){
+            switch(position){
+                case 0: console.log("Sunday"); break;
+                case 1: console.log("Monday"); break;
+                case 2: console.log("Tuesday"); break;
+                case 3: console.log("Wednesday"); break;
+                case 4: console.log("Thursday"); break;
+                case 5: console.log("Fraday"); break;
+                case 6: console.log("Saturday"); break;
+                default: console.log("Wrong data"); break;
+            }
+        }
+        getDayInfo(1)
+        getDayInfo(4)
+        getDayInfo(77)
+        console.log("----------#9")
+        let arr=['a', 'b', 'c']
+        for (i=1; i<4; i++){
+            arr.push(i)
+        }
+        console.log("----------#10")
+        let arr1 = [1,2,3]
+        let arr2 = [4,5,6]
+        res = arr1.concat(arr2)
+        console.log("----------#11")
+        function sumNumber(trg){
+            if (trg <= 0){
+                console.log("Wrong Number. Should be positive int")
+            }
+            if ((typeof trg) != 'number'){
+                console.log("Expected Number, got "+(typeof trg))
+            }
+            if (!Number.isInteger(trg)){
+                console.log('Not an integer value')
+            }
+            let result = 0
+            for (i=1; i<=trg; i++){
+                result += i
+            }
+            console.log("Sum of numbers from 1 to " + trg+ " is " + result)
+        }
+        sumNumber(13)
+    </script>
+    
+</body>
+</html>
